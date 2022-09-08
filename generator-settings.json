@@ -1,0 +1,4 @@
+{
+    "modules":["express"],
+    "devModules":["nodemon", "prettier"]
+}

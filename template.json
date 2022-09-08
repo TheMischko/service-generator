@@ -1,0 +1,48 @@
+{
+    "name": "user-api",
+    "description": "API that serves data about users.",
+    "data": [
+        {
+            "name": "user",
+            "attributes":[
+                {
+                    "name": "userID",
+                    "type": "string",
+                    "description": "Unique identifier of an user.",
+                    "nullable": false
+                },
+                {
+                    "name": "givenName",
+                    "type": "string",
+                    "description": "The given (or 'first') name.",
+                    "nullable": true
+                },
+                {
+                    "name": "familyName",
+                    "type": "string",
+                    "description": "The family (or 'last') name.",
+                    "nullable": true
+                },
+                {
+                    "name": "email",
+                    "type": "string",
+                    "description": "An email address.",
+                    "nullable": false
+                },
+                {
+                    "name": "password",
+                    "type": "string",
+                    "description": "Password of an user.",
+                    "nullable": false
+                }
+            ],
+            "operations": [
+                "create",
+                "read",
+                "update",
+                "delete"
+            ]
+        }
+    ],
+    "port": 5001
+}

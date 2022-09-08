@@ -1,0 +1,11 @@
+import express from "express";
+
+const app = express();
+
+app.get("/info", (req, res) => {
+    res.send("${template.description}");
+});
+
+app.listen(${template.port}, () => {
+    console.log("App ${template.name} is listening on port: ${template.port}");
+});
